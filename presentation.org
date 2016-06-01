@@ -39,8 +39,20 @@
   - Consider a simple fibonacci program.
   - [[./code/c0_fib.py][In Python]]
   - Now, this is a library.
-  - Let's make this work as a small service
-  - 
+  - Let's make this work as a [[file:code/c1_fib_service.py][small service]]
+  - And write some simple [[file:code/perf01.py][performance]] [[file:code/perf02.py][scripts]]
+
+* Current situation
+  - [[./fib.png]]
+  - Our service has just a single worker
+  - Good single request performance.
+  - Poor concurrent performance.
+
+* New architecture
+  [[./workers.png]]
+
+
+
 
 
 
