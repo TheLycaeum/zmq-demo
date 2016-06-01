@@ -1,0 +1,51 @@
+#+TITLE: Python and 0MQ
+
+* Introduction
+  I'm Noufal Ibrahim
+
+* Microservices
+  - Large applications
+  - Moving things to separate services
+  - Communicate between them
+  - Each thing can be separately scaled/managed
+  - Each thing can be in a different language
+  - Can be on separate machines
+
+* Communication between services
+  - Conventionally used a message bus
+  - [[./bus.png]]  
+  - The bus is a liability
+  - A point of failure
+  - RabbitMQ / AMQP
+
+* Distributed message queue
+  - Remove the message queue
+  - So, MQ without an MQ
+  - Or Zero MQ. i.e. 0MQ or ZMQ
+
+* 0MQ
+  - The distribution is still done.
+  - But we don't have a server anymore.
+  - Nodes have MQ infrastructure builtin.
+  - More work, more scalable, more flexible.
+  - [[./zmq-layout.png]]
+
+* 0MQ
+  - Uses the socket API
+  - =socket=, =connect=, =accept=, =setsockopt= etc.
+  - With some extensions
+
+* Example  
+  - Consider a simple fibonacci program.
+  - [[./code/c0_fib.py][In Python]]
+
+
+    
+    
+
+  
+  
+    
+  
+
+
