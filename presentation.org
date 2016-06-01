@@ -38,6 +38,10 @@
 * Example  
   - Consider a simple fibonacci program.
   - [[./code/c0_fib.py][In Python]]
+  - Now, this is a library.
+  - Let's make this work as a small service
+  - 
+
 
 
     
