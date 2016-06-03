@@ -497,12 +497,15 @@
        height="257.99988"
        x="628.53418"
        y="1128.3623"
-       inkscape:export-filename="/home/noufal/projects/presentations/zmq/fib.png"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        id="g6693"
-       transform="translate(0,75.810593)">
+       transform="translate(0,75.810593)"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
@@ -554,7 +557,7 @@
        y="1373.3623"
        id="text6623-8"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/noufal/projects/presentations/zmq/fib.png"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -562,7 +565,10 @@
          x="669.53418"
          y="1373.3623">fib.py</tspan></text>
     <g
-       id="g6709">
+       id="g6709"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="1137.3622"
          x="896.72546"
@@ -603,7 +609,10 @@
     </g>
     <g
        transform="translate(-0.86272,61.776974)"
-       id="g6709-2">
+       id="g6709-2"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="1137.3622"
          x="896.72546"
@@ -648,7 +657,10 @@
        width="144.27452"
        height="50.446053"
        x="896.86273"
-       y="1327.1392" />
+       y="1327.1392"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="opacity:0.95999995;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect6165-1-8-9-7"
@@ -656,14 +668,20 @@
        height="27.84156"
        x="948.17145"
        y="1338.4414"
-       ry="0" />
+       ry="0"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="954.33942"
        y="1357.8798"
        id="text6209-9-4-7-4"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan6211-3-0-7-5"
          x="954.33942"
@@ -674,7 +692,10 @@
        x="903.13727"
        y="1359.6522"
        id="text6702-0-7"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan6704-1-8"
          x="903.13727"
@@ -688,7 +709,10 @@
        sodipodi:rx="23.5"
        sodipodi:ry="23.5"
        d="m 1118,1109.8622 a 23.5,23.5 0 1 1 -47,0 23.5,23.5 0 1 1 47,0 z"
-       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1174.1704)" />
+       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1174.1704)"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
        style="opacity:0.95999995;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -698,7 +722,10 @@
        sodipodi:rx="23.5"
        sodipodi:ry="23.5"
        d="m 1118,1109.8622 a 23.5,23.5 0 1 1 -47,0 23.5,23.5 0 1 1 47,0 z"
-       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1155.2494)" />
+       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1155.2494)"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
        style="opacity:0.95999995;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -708,7 +735,10 @@
        sodipodi:rx="23.5"
        sodipodi:ry="23.5"
        d="m 1118,1109.8622 a 23.5,23.5 0 1 1 -47,0 23.5,23.5 0 1 1 47,0 z"
-       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1193.0913)" />
+       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1193.0913)"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
        style="opacity:0.95999995;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -718,35 +748,53 @@
        sodipodi:rx="23.5"
        sodipodi:ry="23.5"
        d="m 1118,1109.8622 a 23.5,23.5 0 1 1 -47,0 23.5,23.5 0 1 1 47,0 z"
-       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1212.0123)" />
+       transform="matrix(0.09114583,0,0,0.09114583,876.93438,1212.0123)"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart-0);marker-end:none"
        d="m 895,1157.8622 -59.5,100"
        id="path6894"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart-0)"
        d="m 894,1212.8622 -58.5,44.5"
        id="path6896"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart-0);marker-end:none"
        d="m 893,1346.8622 -57.73744,-90.1768"
        id="path6898"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart-0)"
        d="m 739.5,1257.3622 97,0"
        id="path8421"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.13526568999999999;opacity:1;stroke-miterlimit:4;stroke-dasharray:1,2;stroke-dashoffset:0"
        d="m 857.72053,1137.9221 c 67.0993,19.7191 29.30361,73.3095 17.67767,108.1873 -11.62426,34.8728 38.86068,78.2934 14.84924,110.3087 -4.07439,5.4325 -268.84519,-50.5796 -82.7315,-174.6554 25.02336,-16.6822 14.40083,-45.5455 50.20459,-43.8406 z"
        id="path8618"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -764,7 +812,10 @@
        x="762.96826"
        y="1230.553"
        id="text8624"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/noufal/projects/presentations/zmq/workers.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan8626"
          x="762.96826"
