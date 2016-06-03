@@ -5,9 +5,19 @@
    Author: Guillaume Aubert (gaubert) <guillaume(dot)aubert(at)gmail(dot)com>
 
 """
+import socketserver
 import time
 import threading
+
 import zmq
+
+def fib(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib(n-1) + fib(n-2)
+
 
 def worker_routine(worker_url, name, context=None):
     """Worker routine"""
@@ -19,15 +29,14 @@ def worker_routine(worker_url, name, context=None):
 
     while True:
 
-        string  = socket.recv()
+        data  = socket.recv()
 
-        print("{} Received request: [ {} ]".format(name, string))
+        # print("{} Received request: [ {} ]".format(name, data))
 
-        # do some 'work'
-        time.sleep(1)
-
+        val = fib(int(data))
+        ret = str(val).encode('ascii') + b'\n'
         #send reply back to client
-        socket.send(b"World")
+        socket.send(ret)
 
 def launch_workers(context, url_worker):
     # Socket to talk to workers
@@ -53,15 +62,29 @@ def launch_broker(context, url_client, workers):
 
     return thread
 
+class FibHandler(socketserver.BaseRequestHandler):
+    def handle(self):
+        while True:
+            num = self.request.recv(10)
+            if not num:
+                break
+            self.server.zmq_socket.send(num)
+            # val = fib(int(num))
+            # ret = str(val).encode('ascii') + b'\n'
+            message = self.server.zmq_socket.recv()
+            # print("Received reply [%s]" % (message))
+            self.request.send(message)
+
 def launch_server(context, server_addr):
+
     socket = context.socket(zmq.REQ)
     socket.connect("tcp://localhost:5555")
 
-    
-    for request in range(1,11):
-        socket.send(b"Hello")
-        message = socket.recv()
-        print("Received reply %s [%s]" % (request, message))
+
+    socketserver.TCPServer.allow_reuse_address = True
+    socketserver.TCPServer.zmq_socket = socket
+    server = socketserver.TCPServer(server_addr, FibHandler)
+    server.serve_forever()
 
 
 
@@ -70,11 +93,12 @@ def main():
 
     url_worker = "inproc://workers"
     url_client = "tcp://*:5555"
+    server_addr = ("0.0.0.0", 9090)
 
     workers = launch_workers(context, url_worker)
     launch_broker(context, url_client, workers)
 
-    launch_server(context, "")
+    launch_server(context, server_addr)
 
 
     
