@@ -71,18 +71,20 @@
   - [[./fib.png]]
   - Our service has just a single worker
   - Good single request performance.
-  - Poor concurrent performance. t r
+  - Poor concurrent performance.
 
 * New architecture
   [[./workers.png]]
+  - Server gets data
+  - Sends it to a pool of workers
+  - Someone processes it
+  - Returns data
+  - Can scale with more workers
 
-
-
-
-
-
+* More fleshed out 
+  [[./workers2.png]]
+  - We need a server (our old TCP thing)
+  - Some workers to do the work
+  - A broker to switch between the server and workers
+  - 
     
-    
-
-  
-
