@@ -39,7 +39,7 @@
   - Each has different behaviours.
   - e.g. PUB/SUB, REQ/REP, PAIR etc.
   - Thing of them as Lego^tm blocks.
-  - Let's see some examples
+  - Let's see two examples
 
 * Simple request response 
   - A pair of REP/REQ sockets
@@ -52,6 +52,13 @@
   - Multiple clients can "subscribe" to this.
   - Data distribution
     [[file:pub-sub.png]]
+
+* Parallel pipeline
+  - A source generates data.
+  - Data "push"ed to workers
+  - Processed
+  - Collected back at a sink.
+  [[file:parallel-workers.png]]
 
 * Example  
   - Consider a simple fibonacci program.
