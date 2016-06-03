@@ -35,6 +35,24 @@
   - =socket=, =connect=, =accept=, =setsockopt= etc.
   - With some extensions
 
+* Various "socket types"
+  - Each has different behaviours.
+  - e.g. PUB/SUB, REQ/REP, PAIR etc.
+  - Thing of them as Lego^tm blocks.
+  - Let's see some examples
+
+* Simple request response 
+  - A pair of REP/REQ sockets
+    [[file:req-rep.png]]
+  - Lockstep send/receive
+  - Example code
+
+* Pub Sub
+  - A server "publishes" some information.
+  - Multiple clients can "subscribe" to this.
+  - Data distribution
+    [[file:pub-sub.png]]
+
 * Example  
   - Consider a simple fibonacci program.
   - [[./code/c0_fib.py][In Python]]
@@ -46,7 +64,7 @@
   - [[./fib.png]]
   - Our service has just a single worker
   - Good single request performance.
-  - Poor concurrent performance.
+  - Poor concurrent performance. t r
 
 * New architecture
   [[./workers.png]]
@@ -60,8 +78,4 @@
     
 
   
-  
-    
-  
-
 
