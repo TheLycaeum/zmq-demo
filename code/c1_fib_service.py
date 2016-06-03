@@ -1,4 +1,4 @@
-import socket
+import socketserver
 
 def fib(n):
     if n == 0:
@@ -7,23 +7,17 @@ def fib(n):
         return 1
     return fib(n-1) + fib(n-2)
 
+class FibHandler(socketserver.BaseRequestHandler):
+    def handle(self):
+        while True:
+            num = self.request.recv(10)
+            if not num:
+                break
+            val = fib(int(num))
+            ret = str(val).encode('ascii') + b'\n'
+            self.request.send(ret)
 
-s = socket.socket()
-s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
-s.bind(("0.0.0.0", 9090))
-s.listen(1)
-
-while True:
-    print("Waiting for connections")
-    cs, remote_addr = s.accept()
-    print (" Received connection on {}".format(remote_addr))
-    while True:
-        num = cs.recv(10)
-        if not num:
-            break
-        val = fib(int(num))
-        ret = str(val).encode('ascii') + b'\n'
-        cs.send(ret)
-        
-    
+if __name__ == '__main__':
+    socketserver.TCPServer.allow_reuse_address = True
+    server = socketserver.TCPServer(("0.0.0.0", 9090), FibHandler)
+    server.serve_forever()
